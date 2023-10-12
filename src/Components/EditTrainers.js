@@ -84,6 +84,7 @@ function EditTrainers() {
                   placeholder="Enter Name"
                   autoComplete="off"
                   name="namee"
+                  disabled
                   onChange={(e) => setData({ ...data, namee: e.target.value })}
                   value={data.namee}
                 />

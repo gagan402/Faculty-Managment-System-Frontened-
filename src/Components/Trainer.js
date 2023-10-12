@@ -103,7 +103,7 @@ function Trainer() {
                 <td className="text-center">{addtrainerg.contact}</td>
                 <td className="text-center">{addtrainerg.address}</td>
                 <td className="text-center">
-                  <a target="_blank" href={addtrainerg.timetable}><img
+                  <a target="_blank" href={addtrainerg.timetable} rel="noopener"><img
                     src={addtrainerg.timetable}
                     alt="no pic"
                     className="resume_image"
