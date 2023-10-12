@@ -1,0 +1,336 @@
+.login{
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.9s ease-in-out, opacity 0.5s ease-in-out;
+}
+.login.slide-in{
+  transform: translateX(0);
+  opacity: 1;
+}
+.text-danger{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.text-danger.fade-in{
+  opacity: 1;
+}
+.login-button{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.login-button.fade-in{
+  opacity: 1;
+}
+.loggbtn{
+   background-color:rgb(255, 163, 77) !important;
+   border:1px solid rgb(255, 163, 77) !important;
+   color:rgb(19, 30, 37) !important;
+   font-weight:900 !important;
+}
+.loginPage{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+}
+.loginForm{
+   border:2px solid white;
+   color:white;
+   font-size:20px;
+   opacity: 0.1;
+   width: 330px;
+   height: 370px;
+   margin-left: 400px;
+   
+} 
+.note{
+  font-size:18px;
+}
+.ggn{
+  border-radius:0 60px 60px 0;
+  background-color: rgb(19, 30, 37);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* background: radial-gradient(circle at -2.9% 60.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 20.9%, rgb(255, 163, 77) 20.9%, rgb(255, 163, 77) 50.4%, rgb(19, 30, 37)34.5%, rgb(19, 30, 37) 20%); */
+}
+
+.header{
+  height: 130px;
+  margin-bottom: 80px;
+  display: flex;
+}
+.header h1{
+  color: white;
+  margin: auto;
+  font-size: 65px;
+  letter-spacing: 2px;
+}
+.trainer_image{
+     width:50px;
+     height:50px;
+     border-radius:50%;
+}
+
+
+.resume_image{
+  width:50px;
+  height:50px;
+  border-radius:6px;
+}
+
+
+
+
+.main{
+  width: 1220px;
+  height: 670px;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.dash{
+  width: 90%;
+  height: 95%;
+  /* margin:auto; */
+  margin: 20px 0 0 80px;
+  border-radius: 28px;
+  border: 1px solid black;
+  display: flex;
+  color: white;
+  background-color: rgb(19, 30, 37);
+}
+.left{
+  width: 30%;
+  padding: 4%;
+  padding-top: 10px;
+
+}
+
+.proHead{
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.photu img{
+  width: 95%;
+  height: 40%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.dataa{
+  padding: 5px;
+  margin: 5px;
+  border-radius: 6px;
+  height: 60%;
+  width: 100%;
+}
+.lowTab{
+  font-size: 20px;
+}
+.main p{
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.main a{
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.trTa{
+  background-color: rgb(19, 30, 37) !important;
+}
+.btnClose{
+  float: right;
+  /* margin: 20px; */
+  /* border-radius: 50%; */
+  margin: 10px;
+  cursor: pointer;
+}
+
+.right{
+  width: 70%;
+
+}
+.right h3{
+  text-align: center;
+}
+.barr{
+  /* align-items: center; */
+  text-align: center;
+  margin: 10px 0 0 80px;
+
+
+}
+.piee{
+  border: 1px soild red;
+  height: 43%;
+  display: flex;
+
+}
+
+.trin{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+.bdaDiv{
+  width: 100%;
+  height: 92%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.bdaDiv h2{
+  text-align: center;
+  font-weight: 700;
+  /* padding: 10px; */
+}
+.bahr{
+  width: 90%;
+  height: 82%;
+  margin: 0 0 15px 60px;
+  display: flex;
+  border: 1px solid black;
+  color: white;
+  border-radius: 30px;
+  background-color: rgb(19, 30, 37);
+  padding-bottom: 20px;
+}
+
+.lefte{
+  width: 50%;
+  height: 100%;
+  padding-left: 100px;
+}
+.righte{
+  width: 50%;
+  height: 100%;
+  margin: 0 0 10px 40px;
+  padding-left: 50px;
+
+}
+.righte button{
+  float:right;
+  margin: 10px 80px 0 0 ;
+  padding: 5px;
+  width: 100px;
+}
+.bahr input{
+  height:50px;
+  width: 83%;
+  font-size: 17px;
+  font-weight: 700;
+}
+.bahr select{
+  width: 83%;
+  font-weight: 700;
+
+}
+.bahrr{
+  width: 90%;
+  height: 500px;
+  margin: 0 0 15px 60px;
+  display: flex;
+  border: 1px solid black;
+  color: white;
+  border-radius: 30px;
+  background-color: rgb(19, 30, 37);
+  padding-bottom: 20px;
+}
+.bahrr input{
+  height:50px;
+  width: 83%;
+  font-size: 17px;
+  font-weight: 700;
+}
+.bahrr select{
+  width: 83%;
+  font-weight: 700;
+
+}
+.bahrr label{
+  font-size: 20px;
+  padding: 10px;
+}
+.bahr label{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.cutt{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+
+.crt{
+  margin: 15px;
+}
+
+.blbl{
+  margin-left: 400px;
+  font-weight: 700;
+  /* color:rgb(255, 124, 0); */
+}
+.grad{
+  background: linear-gradient(to bottom right, #007BFF, #00C6FF);
+}
+
+
+.response{
+  max-height: 620px;
+  overflow-y: scroll;
+}
+
+
+
+
+.response::-webkit-scrollbar {
+  width: 6px;               
+}
+
+.response::-webkit-scrollbar-track {
+
+background-color:rgb(19, 30, 37);
+border-radius: 20px;  
+}
+
+.response::-webkit-scrollbar-thumb {
+  border-radius: 15px;       
+  border: 1.5px solid rgb(255, 124, 0);  
+  background-color: rgb(255, 124, 0);
+}
+
+.butt{
+  border:1px solid  rgb(255, 124, 0)!important;
+  background-color: rgb(255, 124, 0) !important;
+  color: rgb(19, 30, 37) !important;
+  font-size:18px !important;
+  font-weight:700 !important;
+} 
+
+
+
+.gradient-heading {
+  background: radial-gradient(circle, rgb(255,124,0), rgb(19,30,37));
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 40px;
+}
+
+.logoo img{
+  margin-left: 15px;
+  /* background-color: white; */
+  height: 90px;
+  width: 140px;
+  /* margin: auto; */
+}
+
+
+
