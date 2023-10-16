@@ -11,8 +11,7 @@ import EditTrainers from './Components/EditTrainers';
 import Dashh from './Components/Dashh';
 import BarChartt from './Components/BarChartt';
 import PieOne from './Components/PieOne';
-
-
+import Timet from './Components/Timet';
 function App() {
   const [show,showlogin]=useState(true);
   return (
@@ -29,8 +28,8 @@ function App() {
        </Route>
        </Routes>
       </BrowserRouter>
-      
-  );
+         // <Timet></Timet>
+      );
 }
 
 export default App;

@@ -7,6 +7,8 @@ import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
 import {faTrashCan} from "@fortawesome/free-solid-svg-icons";
 import {faIdCard} from "@fortawesome/free-solid-svg-icons";
 import {faPenToSquare} from "@fortawesome/free-solid-svg-icons";
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup'
 function Trainer() {
   const [data, setData] = useState([]);
   window.abc = axios;
@@ -25,6 +27,8 @@ function Trainer() {
   }, []);
 
   const handleDelete = (id) => {
+    const confirmDelete = window.confirm("Are you sure you want to remove this faculty?");
+    if (confirmDelete) {
     axios
       .delete("/delete/" + id)
       .then((res) => {
@@ -35,25 +39,24 @@ function Trainer() {
         }
       })
       .catch((err) => console.log(err));
+    }
   };
 
+  const [search , setSearch] = useState('')
+  console.log(search)
   return (
     <div className="container trin">
-      {/* <div className="d-flex">
-
-      <Link to="/create" className="btn btn-success  mb-3">
-        Add Trainer{" "}
-      </Link>
-
-        <h3 className="align-items-center">Trainers List</h3>
-        
-      </div> */}
-
       <div className="d-flex  align-items-center mb-1">
         <Link to="/create" className="btn butt">
         Enroll Faculty
         </Link>
         <h2 className="blbl">Faculty Members</h2>
+        <Form className="searchBar">
+          <InputGroup>
+          
+            <Form.Control placeholder="Search Faculty..." onChange={(e) => setSearch(e.target.value)} className="searchInp"></Form.Control>
+          </InputGroup>
+        </Form>
       </div>
       <div className="response rounded-5">
       <table className="table table-dark table-striped table-bordered ">
@@ -77,7 +80,9 @@ function Trainer() {
           </tr>
         </thead>
         <tbody>
-          {data.map((addtrainerg, index) => {
+          {data.filter((addtrainerg) =>{
+            return search.toLowerCase() === '' ? addtrainerg : addtrainerg.namee.toLowerCase().includes(search)
+          }).map((addtrainerg, index) => {
             return (
               <tr key={index}>
                 <td className="text-center">

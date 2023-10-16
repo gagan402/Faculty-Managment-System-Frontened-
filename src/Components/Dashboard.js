@@ -9,12 +9,15 @@ import { faPowerOff } from "@fortawesome/free-solid-svg-icons";
 function Dashboard() {
   const navigate = useNavigate();
   const handleLogout = () => {
+    const confirmLogout = window.confirm("Are you sure you want to Logout?");
+    if(confirmLogout){
     axios
       .get("/logout")
       .then((res) => {
         navigate("/login");
       })
       .catch((err) => console.log(err));
+    }
   };
   return (
     <>

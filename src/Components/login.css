@@ -334,3 +334,16 @@ border-radius: 20px;
 
 
 
+
+
+
+
+.searchBar{
+  margin-left: 250px;
+}
+.searchInp{
+  background-color: rgb(255, 124, 0) !important;
+  color: black !important;
+  width: 230px !important;
+  font-size: 18px !important;
+}
