@@ -19,12 +19,14 @@ function App() {
        <Routes> 
        <Route path='/login'  element={<Login/>} ></Route>
        <Route path='/' element={<Dashboard/>} >
+   
           <Route path='' index element={<Trainer/>}></Route>
           <Route path='/dashh/:namee' element={<Dashh/>}></Route>
           <Route path='/create' element={<AddTrainer/>}></Route> 
           <Route path='/trainerEdit/:namee' element={<EditTrainers/>}></Route>
           <Route path='/BarChartt' element={<BarChartt />}></Route>
           <Route path='/PieOne' element={<PieOne />}></Route>
+          
        </Route>
        </Routes>
       </BrowserRouter>
